@@ -1,0 +1,17 @@
+{
+  "name": "craico/my-test-plugin",
+  "description": "WordPress Plugin description",
+  "keywords": ["wordpress", "plugin"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Craig Connell",
+      "email": "craico@email.com"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=5.3.2",
+    "composer/installers": "v1.10.0"
+  }
+}
