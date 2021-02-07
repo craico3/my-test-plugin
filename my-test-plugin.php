@@ -24,6 +24,7 @@ function my_url_handler()
   if ($uri === '/test/myurl') :
     if (isset($_GET['usrtbldata']) && $_GET['usrtbldata'] == 1) :
       $mtp_redirect = 1;
+      remove_action('wp_head', '_wp_render_title_tag', 1);
     endif;
   endif;
 }

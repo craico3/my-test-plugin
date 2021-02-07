@@ -10,9 +10,7 @@
 
 get_header(); ?>
 
-<head>
-  <title>Test</title>
-</head>
+<title>My Test Plugin</title>
 
 <div>
   <h1>Fetch API GET REQUEST</h1>
