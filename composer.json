@@ -17,9 +17,9 @@
     "yoast/wordpress-seo": "15.7"
   },
   "extra": {
-    "wordpress-install-dir": "wp/",
+    "wordpress-install-dir": "wordpress/",
     "installer-paths": {
-      "wp/wp-content/plugins/{$name}/": [
+      "wordpress/wp-content/plugins/{$name}/": [
           "type:wordpress-plugin"
       ]
     }
