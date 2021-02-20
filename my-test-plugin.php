@@ -21,7 +21,9 @@ function my_url_handler()
 {
   global $mtp_redirect;
   $uri = explode('?', $_SERVER['REQUEST_URI'], 2)[0];
-  if ($uri === '/test/myurl') :
+  $myurl = '/myurl';
+  $mylen = (strlen($uri) - 1) - strpos($uri, $myurl);
+  if (strpos($uri, $myurl) and $mylen == 5) :
     if (isset($_GET['usrtbldata']) && $_GET['usrtbldata'] == 1) :
       $mtp_redirect = 1;
       remove_action('wp_head', '_wp_render_title_tag', 1);
